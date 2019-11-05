@@ -29,9 +29,9 @@ public class InfoActivity extends AppCompatActivity {
     // TODO - Task 2 - Launch the Google Maps Activity
     // ***
     public void createMapIntent(View view){
-        Uri uriAdress = Uri.parse("geo:0,0?q=16 E Veilchengasse Deggendorf, 94469");
-        Intent mapIntent = new Intent(Intent.ACTION_VIEW, uriAdress);
-        mapIntent.setPackage("com.android.apps.maps");
+        Uri uriAdressdress = Uri.parse("geo:0,0?q=618 E South St Orlando, FL 32801");
+        Intent mapIntent = new Intent(Intent.ACTION_VIEW, uriAdressdress);
+        mapIntent.setPackage("com.google.android.apps.maps");
         //check if there is a component to handle this intent
         if(mapIntent.resolveActivity(getPackageManager()) != null){
             startActivity(mapIntent);
